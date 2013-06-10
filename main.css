@@ -249,8 +249,10 @@ opacity: .8;
 	float: right;
 	margin-top: 5px;
 	cursor: pointer;
+	z-axis: 3;
 }
 #pagefctbtn.open, #pagefctbtn:hover {
+	
 	background-color: #DDDDDD !important;
 }
 .dropdownmenu {
@@ -293,7 +295,7 @@ opacity: .8;
 }
 #content {
 	margin: 0;
-	padding: 0;\
+	padding: 0;
 }
 #userfctdropdown {
 	display: none;
@@ -310,6 +312,9 @@ opacity: .8;
 	background-color: #0C6185;
 }
 
+#pagefctdropdown{
+	margin-left: 554px; //temporary solution
+}
 #pagefctdropdown li a {
 	color: #888;
 }
