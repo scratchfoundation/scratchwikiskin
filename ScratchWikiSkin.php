@@ -1,32 +1,35 @@
 <?php
 /**
- * S2Cookie skin
+ * Scratch skin
  *
  * @file
  * @ingroup Skins
  */
-if (!defined('MEDIAWIKI')) {
-	die();
+
+if( !defined( 'MEDIAWIKI' ) ) {
+	die( 1 );
 }
 
-class SkinS2Cookie extends SkinTemplate {
+#require_once( dirname( dirname( __FILE__ ) ) . '/includes/SkinTemplate.php');
+
+class SkinScratchWikiSkin extends SkinTemplate{
 	var $useHeadElement = true;
+
+	var $skinname = 'scratchwikiskin', $stylename = 'scratchwikiskin',
+	$template = 'ScratchWikiSkinTemplate';
 	
 	function initPage(OutputPage $out) {
 		parent::initpage($out);
-		$this->skinname = 's2cookie';
-		$this->stylename = 's2cookie';
-		$this->template = 'S2CookieTemplate';
 	}
 	
 	function setupSkinUserCss(OutputPage $out) {
 		parent::setupSkinUserCss($out);
-		$out->addStyle('s2cookie/main.css', 'screen');
-		$out->addHeadItem('skinscript', '<script type="text/javascript" src="/mw/skins/s2cookie/skin.js"></script>');
+		$out->addStyle('scratchwikiskin/main.css', 'screen');
+		$out->addHeadItem('skinscript', '<script type="text/javascript" src="scratchwikiskin/skin.js"></script>');
 	}
 }
 
-class S2CookieTemplate extends BaseTemplate {
+class ScratchWikiSkinTemplate extends BaseTemplate {
 	public function execute() {
 		global $wgRequest, $wgStylePath, $wgUser;
 		$skin = $this->data['skin'];
@@ -37,7 +40,7 @@ class S2CookieTemplate extends BaseTemplate {
 <header>
 	<div class=container>
 		<h1>
-			<a href>Scratch</a>
+			<a href = "http://scratch.mit.edu"></a>
 		</h1>
 		<ul class=left>
 			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a>
@@ -49,7 +52,7 @@ class S2CookieTemplate extends BaseTemplate {
 			<!-- search -->
 			<li><form action="/w/index.php" class=search>
 				<span class="glass"><i></i></span>
-				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]" value="test" name="search" autocomplete="off" placeholder="Search">
+				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search">
 				<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
 				<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext">					<input type="hidden" value="Special:Search" name="title">
 			</li>

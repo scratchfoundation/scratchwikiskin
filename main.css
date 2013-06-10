@@ -23,13 +23,12 @@ header {
 header h1 {
 	float: left;
 	margin: 0;
-}
-header h1 a {
+
 	display: block;
 	width: 76px;
 	height: 33px;
 	margin-right: 20px;
-	background: url(scratchlogo.png) center center no-repeat;
+	background: url("scratchlogo.png") center center no-repeat;
 	text-indent: -99999em;
 }
 header ul,
@@ -141,6 +140,7 @@ nav.box li a {
 }
 a {
 	color: #1aa0db;
+	//color: orange;
 	text-decoration: none;
 }
 a:hover,
@@ -185,41 +185,37 @@ footer p {
 /* search bar */
 
 form.search {
-    float: left;
-    line-height: 33px;
-    margin: 0;
-    opacity: 1;
-    position: relative;
+   display: inline-block;
+   margin: 0 10px;
+   position: relative;
 }
 form.search input {
-    background-color: #FFFFFF;
-    border: medium none;
-    border-radius: 10px 10px 10px 10px;
-    color: #666666;
-    line-height: 1;
-    margin: 6px 0;
-    min-height: 14px;
-    padding: 2px 9px 2px 30px;
-    width: 170px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+height: 1em;
+display: inline-block;
+padding-left: 28px;
+width: 170px;
+height: 21px;
 }
 form.search .glass {
-    background-color: #FFFFFF;
-    border-bottom-left-radius: 10px;
-    border-right: 1px solid #DDDDDD;
-    border-top-left-radius: 10px;
-    display: block;
-    left: 1px;
-    padding: 3px 5px;
-    position: absolute;
-    top: 6px;
-	height: 14px;
+/*    border-bottom-left-radius: 10px;*/
+/*    border-right: 1px solid #DDDDDD;*/
+/*    border-top-left-radius: 10px;*/
+/*    display: block;*/
+/*    left: 1px;*/
+/*    padding: 3px 5px;*/
+/*    position: absolute;*/
+/*    top: 6px;*/
+/*	height: 14px;*/
 }
 form.search .glass i {
-    background-image: url("nav-search-glass.png");
-    display: block;
-    font-size: 0;
-    height: 15px;
-    width: 15px;
+   background: url("nav-search-glass.png") no-repeat center center;
+width: 26px;
+height: 23px;
+position: absolute;
+border-right: 1px solid #ccc;
+opacity: .8;
 }
 
 /* page fct dropdown */
