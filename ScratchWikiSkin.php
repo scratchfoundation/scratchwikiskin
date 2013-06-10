@@ -39,26 +39,29 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
 		?>
 <header>
 	<div class=container>
-		<h1>
-			<a href = "http://scratch.mit.edu"></a>
-		</h1>
+		
+			<a class= "scratch" href = "http://scratch.mit.edu"></a>
+		
 		<ul class=left>
 			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a>
 			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a>
 			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a>
 			<li><a href="http://scratch.mit.edu/help/">Help</a>
-		</ul>
-		<ul class="user right">
-			<!-- search -->
-			<li><form action="/w/index.php" class=search>
+		
+		<!-- search -->
+		<li><form action="/w/index.php" class=search>
 				<span class="glass"><i></i></span>
-				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search">
+				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki">
 				<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
 				<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext">					<input type="hidden" value="Special:Search" name="title">
 			</li>
+		</ul>
+		<ul class="user right">
+			
+			
 			<!-- user links -->
 <?php	if (!$wgUser->isLoggedIn()) { ?>
-			<li><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo $this->data['personal_urls']['anonlogin']['href'];}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in</a></li>
+			<li><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo $this->data['personal_urls']['anonlogin']['href'];}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
 <?php	} else { ?>
 			<li id=userfcttoggle class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
 			<ul id=userfctdropdown class=dropdownmenu><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
@@ -88,10 +91,12 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
 <?php		$this->renderContenttypeBox();
 			if (!$wgUser->isLoggedIn()) { ?>
 			<div class=box>
+				
 				<h1>Help the wiki!</h1>
 				<div class=box-content>
 				The Scratch Wiki is made by and for Scratchers. Do you want to contribute?<br><br><a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more!</a>
 				</div>
+				
 			</div>
 <?php		} ?>
 		</div>

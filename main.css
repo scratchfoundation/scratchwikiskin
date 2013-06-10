@@ -20,17 +20,20 @@ header {
 	box-shadow: 0 1px 1px #ccc;
 	z-index: 1;
 }
-header h1 {
-	float: left;
-	margin: 0;
 
+
+a.scratch{	
+	float: left;
 	display: block;
-	width: 76px;
-	height: 33px;
-	margin-right: 20px;
+	width: 80px;
+	height: 35px;
 	background: url("scratchlogo.png") center center no-repeat;
 	text-indent: -99999em;
 }
+a.scratch:hover{
+	background: url("scratchlogo_highlight.png") center center no-repeat;
+}
+
 header ul,
 footer ul {
 	padding: 0;
@@ -111,6 +114,7 @@ header li a:hover, #userfcttoggle.open {
 	-o-box-shadow: 0 2px 3px rgba(34,25,25,0.3);
 	box-shadow: 0 2px 3px rgba(34,25,25,0.3);
 	margin: 0px 0px 20px;
+	//position: absolute;
 }
 .box > h1 {
 	margin: 0;
@@ -188,15 +192,15 @@ form.search {
    display: inline-block;
    margin: 0 10px;
    position: relative;
+   margin-top: 5px;
 }
 form.search input {
 -webkit-border-radius: 10px;
 border-radius: 10px;
-height: 1em;
+height: 23px;
 display: inline-block;
 padding-left: 28px;
-width: 170px;
-height: 21px;
+width: 204px;
 }
 form.search .glass {
 /*    border-bottom-left-radius: 10px;*/
