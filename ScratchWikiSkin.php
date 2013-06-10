@@ -25,11 +25,12 @@ class SkinScratchWikiSkin extends SkinTemplate{
 	function setupSkinUserCss(OutputPage $out) {
 		parent::setupSkinUserCss($out);
 		$out->addStyle('scratchwikiskin/main.css', 'screen');
-		$out->addHeadItem('skinscript', '<script type="text/javascript" src="scratchwikiskin/skin.js"></script>');
+		
+		$out->addHeadItem('skinscript', "<script type='text/javascript' src='../skins/scratchwikiskin/skin.js'></script>");
 	}
 }
 
-class ScratchWikiSkinTemplate extends BaseTemplate {
+class ScratchWikiSkinTemplate extends BaseTemplate{
 	public function execute() {
 		global $wgRequest, $wgStylePath, $wgUser;
 		$skin = $this->data['skin'];
@@ -46,7 +47,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
 			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a>
 			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a>
 			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a>
-			<li><a href="http://scratch.mit.edu/help/">Help</a>
+			<li class = last><a href="http://scratch.mit.edu/help/">Help</a>
 		
 		<!-- search -->
 		<li><form action="/w/index.php" class=search>
@@ -61,7 +62,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
 			
 			<!-- user links -->
 <?php	if (!$wgUser->isLoggedIn()) { ?>
-			<li><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo $this->data['personal_urls']['anonlogin']['href'];}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
+			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo $this->data['personal_urls']['anonlogin']['href'];}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
 <?php	} else { ?>
 			<li id=userfcttoggle class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
 			<ul id=userfctdropdown class=dropdownmenu><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
