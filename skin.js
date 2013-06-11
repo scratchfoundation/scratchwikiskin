@@ -4,17 +4,29 @@ Scratch Wiki Skin script
 
 */
 
+//get the element from an id, with functions to write, add, show, hide, addclass, delclass
 function el(id) {
 	var h = document.getElementById(id);
+
+	//if no element exists with that id, return null
+	if(!h){
+		return h;
+	}
+	
 	h.write = function(o) {this.innerHTML = o;};
 	h.add = function(o) {this.innerHTML += o;};
 	h.show = function(o) {this.style.display = 'block';};
 	h.hide = function(o) {this.style.display = 'none';};
 	h.addclass = function(c) {this.className+=' '+c;this.className=this.className.trim();};
 	h.delclass = function(c) {this.className=this.className.replace(c,'').replace('  ',' ').trim();};
+	
 	return h;
 }
+
+
 window.onload = function() {
+	
+	//when pencil icon clicked, display dropdown 
 	el('pagefctbtn').onclick = function() {
 		if (el('pagefctdropdown').style.display!='block') {
 			el('pagefctbtn').addclass('open');
@@ -24,6 +36,8 @@ window.onload = function() {
 			el('pagefctdropdown').hide();
 		}
 	}
+	
+	//when mouse moved away, hide dropdown
 	el('pagefctdropdown').onmouseout = function(e) {
 		if (!e) var e = window.event;
 		if (!e.toElement) e.toElement = e.relatedTarget;
@@ -32,23 +46,36 @@ window.onload = function() {
 			el('pagefctdropdown').hide();
 		}
 	}
-	el('userfcttoggle').onclick = function() {
-		if (el('userfctdropdown').style.display!='block') {
-			el('userfcttoggle').addclass('open');
-			el('userfctdropdown').show();
-		} else {
+
+	//if user is logged in and toggle is showing, add dropdown functions
+	if(el('userfcttoggle')){
+		//if username toggle clicked, display dropdown
+		el('userfcttoggle').onclick = function() {
+		
+			if (el('userfctdropdown').style.display!='block') {
+				el('userfcttoggle').addclass('open');
+				el('userfctdropdown').show();
+			} else {
+				el('userfcttoggle').delclass('open');
+				el('userfctdropdown').hide();
+			}	
+		}
+
+		//when mouse moved away, hide dropdown		
+		el('userfctdropdown').onmouseout = function(e) {
+			if (!e) var e = window.event;
+			if (!e.toElement) e.toElement = e.relatedTarget;
+			if (' ul li img a'.indexOf(e.toElement.tagName.toLowerCase())<0) {
 			el('userfcttoggle').delclass('open');
 			el('userfctdropdown').hide();
 		}
-	}
-	el('userfctdropdown').onmouseout = function(e) {
-		if (!e) var e = window.event;
-		if (!e.toElement) e.toElement = e.relatedTarget;
-		if (' ul li img a'.indexOf(e.toElement.tagName.toLowerCase())<0) {
-			el('userfcttoggle').delclass('open');
-			el('userfctdropdown').hide();
-		}
+		
 	};
+	}
+	
+	
+	
+	
 }
 /*
 function showpersonallinks() {

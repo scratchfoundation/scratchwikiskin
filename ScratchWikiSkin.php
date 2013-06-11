@@ -19,14 +19,19 @@ class SkinScratchWikiSkin extends SkinTemplate{
 	$template = 'ScratchWikiSkinTemplate';
 	
 	function initPage(OutputPage $out) {
-		parent::initpage($out);
+		
+
+		parent::initPage( $out );
+
+		
 	}
 	
 	function setupSkinUserCss(OutputPage $out) {
+		global $wgLocalStylePath;
 		parent::setupSkinUserCss($out);
 		$out->addStyle('scratchwikiskin/main.css', 'screen');
 		
-		$out->addHeadItem('skinscript', "<script type='text/javascript' src='../skins/scratchwikiskin/skin.js'></script>");
+		$out->addHeadItem('skinscript', "<script type='text/javascript' src='$wgLocalStylePath/scratchwikiskin/skin.js'></script>");
 	}
 }
 
@@ -62,6 +67,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			
 			<!-- user links -->
 <?php	if (!$wgUser->isLoggedIn()) { ?>
+			<!--<li class = last><a href=" 	Special:Userlogin">Log in to the Wiki</a></li>-->
 			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo $this->data['personal_urls']['anonlogin']['href'];}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
 <?php	} else { ?>
 			<li id=userfcttoggle class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
