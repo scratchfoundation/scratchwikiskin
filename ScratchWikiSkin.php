@@ -81,6 +81,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <div class="container main">
 	<div class=main-inner>
 		<div class=left>
+		<div class = "wikilogo_space"><a class = "wikilogo" href = "/w/index.php/Main_Page" title = "Scratch Wiki Main Page"></a></div>
 <?php		foreach ($this->getSidebar() as $box): if ($box['header']!='Toolbox'||$wgUser->isLoggedIn()){?>
 			<div class=box>
 				<!-- <?=print_r($box);?> -->

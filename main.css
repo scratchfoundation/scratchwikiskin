@@ -82,13 +82,25 @@ header li a:hover, #userfcttoggle.open {
 .main .left {
 	float: left;
 	width: 160px;
-	padding: 140px 0 0 0;
-	background-image: url(wiki.png);
-	background-position: center top;
+	//padding: 140px 0 0 0;
+	display: block;
+	//background-image: url("wiki.png") ;
+	//background-repeat: no-repeat;
+}
+
+
+.wikilogo_space{
+	height: 140px;
+}
+
+.wikilogo{
+	background-image: url("wiki.png") ;
 	background-repeat: no-repeat;
+	height: 140px;
+	display: block;
 }
 .main .right {
-	float: left;
+	float: right;
 	width: 760px;
 	margin-left: 20px;
 }
@@ -156,6 +168,8 @@ a.new{
 	color: red;
 	text-decoration: none;
 }
+
+a.external
 a:hover,
 a:focus,
 a:active {
