@@ -12,4 +12,5 @@ To install / setup
   
   you@yourcomputer:/var/www/w/skins$ ln -s scratchwikiskin/ScratchWikiSkin.php ScratchWikiSkin.php
 
+Credits: Original design by JSO, with contributions from jvvg, blob8108, and scmb1.
 
