@@ -413,3 +413,7 @@ dt {
 table.diff td div {
     overflow: visible;
 }
+
+img{
+	width: 100%;
+}
