@@ -55,7 +55,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<li class = last><a href="http://scratch.mit.edu/help/">Help</a>
 		
 		<!-- search -->
-		<li><form action="/w/index.php" class=search>
+		<li><form action="<?php $this->text( 'wgScript' ) ?>" class="search">
 				<span class="glass"><i></i></span>
 				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki">
 				<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
@@ -81,7 +81,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <div class="container main">
 	<div class=main-inner>
 		<div class=left>
-		<div class = "wikilogo_space"><a class = "wikilogo" href = "/w/index.php/Main_Page" title = "Scratch Wiki Main Page"></a></div>
+		<div class = "wikilogo_space"><a class = "wikilogo" href = "<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" title = "Scratch Wiki Main Page"></a></div>
 <?php		foreach ($this->getSidebar() as $box): if ($box['header']!='Toolbox'||$wgUser->isLoggedIn()){?>
 			<div class=box>
 				<!-- <?=print_r($box);?> -->
