@@ -225,6 +225,10 @@ footer p {
 	padding: 1em 0 0;
 }
 
+.printfooter {
+	display:none;
+}
+
 /*TO BE ORGANIZED */
 
 /* search bar */
@@ -352,6 +356,10 @@ opacity: .8;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 5px 5px 0 0;
+	float:right;
+}
+.catlinks-allhidden {
+	display:none;
 }
 
 /*ctype boxes */
