@@ -44,15 +44,15 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		
 		?>
 <header>
-	<div class=container>
+	<div class="container">
 		
 			<a class= "scratch" href = "http://scratch.mit.edu"></a>
 		
-		<ul class=left>
+		<ul class="left">
 			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a></li>
 			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a></li>
 			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a></li>
-			<li class = last><a href="http://scratch.mit.edu/help/">Help</a></li>
+			<li class = "last"><a href="http://scratch.mit.edu/help/">Help</a></li>
 		
 		<!-- search -->
 			<li>
@@ -73,8 +73,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<!--<li class = last><a href=" 	Special:Userlogin">Log in to the Wiki</a></li>-->
 			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo htmlspecialchars($this->data['personal_urls']['anonlogin']['href']);}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
 <?php	} else { ?>
-			<li id=userfcttoggle class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
-			<ul id=userfctdropdown class=dropdownmenu><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
+			<li id="userfcttoggle" class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
+			<ul id=userfctdropdown class="dropdownmenu"><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
 				<li<?php if ($tab['class']):?> class="<?=htmlspecialchars($tab['class'])?>"<?php endif?>><a href="<?=htmlspecialchars($tab['href'])?>"><?=htmlspecialchars($tab['text'])?></a><?php endforeach?>
 			</ul>
 <?php	} ?>
@@ -116,13 +116,14 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		</div>
 		<div class=right>
 			<article class=box>
-				<h1><?php $this->html('title')?></h1>
+				<h1><?php $this->html('title')?>
 				<div id=pagefctbtn></div>
 				<ul id=pagefctdropdown class="dropdownmenu box">
 <?				foreach ($this->data['content_actions'] as $key => $tab):?>
 					<?=$this->makeListItem($key, $tab)?>
 <?				endforeach?>
 				</ul>
+				</h1>
 				<div class=box-content>
 <?php if ($this->data['subtitle']):?><p><?php $this->html('subtitle')?></p><?php endif?>
 <?php if ($this->data['undelete']):?><p><?php $this->html('undelete')?></p><?php endif?>
