@@ -55,11 +55,14 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<li class = last><a href="http://scratch.mit.edu/help/">Help</a>
 		
 		<!-- search -->
-		<li><form action="<?php $this->text( 'wgScript' ) ?>" class="search">
-				<span class="glass"><i></i></span>
-				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki">
-				<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
-				<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext">					<input type="hidden" value="Special:Search" name="title">
+			<li>
+				<form action="<?php $this->text( 'wgScript' ) ?>" class="search">
+					<span class="glass"><i></i></span>
+					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki">
+					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
+					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext">
+					<input type="hidden" value="Special:Search" name="title">
+				</form>
 			</li>
 		</ul>
 		<ul class="user right">
@@ -135,11 +138,11 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 </div>
 <footer>
 	<ul>
-		<li><a href>About</a>
-		<li><a href>Educators</a>
-		<li><a href>Parents</a>
-		<li><a href>Community Guidelines</a>
-		<li><a href>Contact Us</a>
+		<li><a href>About</a></li>
+		<li><a href>Educators</a></li>
+		<li><a href>Parents</a></li>
+		<li><a href>Community Guidelines</a></li>
+		<li><a href>Contact Us</a></li>
 	</ul>
 	<p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
 </footer>
