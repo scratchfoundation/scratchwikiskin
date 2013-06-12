@@ -73,7 +73,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<!--<li class = last><a href=" 	Special:Userlogin">Log in to the Wiki</a></li>-->
 			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo htmlspecialchars($this->data['personal_urls']['anonlogin']['href']);}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
 <?php	} else { ?>
-			<li id="userfcttoggle" class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
+			<li id="userfcttoggle" class="last"><a><?=htmlspecialchars($wgUser->mName)?><span class = caret></span></a></li>
 			<ul id=userfctdropdown class="dropdownmenu"><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
 				<li<?php if ($tab['class']):?> class="<?=htmlspecialchars($tab['class'])?>"<?php endif?>><a href="<?=htmlspecialchars($tab['href'])?>"><?=htmlspecialchars($tab['text'])?></a><?php endforeach?>
 			</ul>

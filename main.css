@@ -69,6 +69,21 @@ header li a:active {
 header li a:hover, #userfcttoggle.open {
 	background-color: #0c6185;
 }
+
+.caret{
+	width: 0;
+	height: 0;
+	display: inline-block;
+	content: "&darr;";
+	text-indent: -99999px;
+	vertical-align: top;
+	margin-left: 4px;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #fff;
+	opacity: .5;
+	vertical-align: middle;
+}
 .container {
 	max-width: 940px;
 	margin: auto;
