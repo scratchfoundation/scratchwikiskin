@@ -94,6 +94,9 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <?php				foreach ($box['content'] as $name => $item):?>
 					<?=$this->makeListItem($name, $item)?>
 <?php				endforeach;
+				?>
+				</ul>
+<?php
 			else:?>
 				<?=$box['content']?>
 <?php			endif?>
@@ -113,15 +116,13 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		</div>
 		<div class=right>
 			<article class=box>
-				<h1><?php $this->html('title')?><div id=pagefctbtn></div>
+				<h1><?php $this->html('title')?></h1>
+				<div id=pagefctbtn></div>
 				<ul id=pagefctdropdown class="dropdownmenu box">
 <?				foreach ($this->data['content_actions'] as $key => $tab):?>
 					<?=$this->makeListItem($key, $tab)?>
 <?				endforeach?>
 				</ul>
-			</nav>
-				</ul>				
-				</h1>
 				<div class=box-content>
 <?php if ($this->data['subtitle']):?><p><?php $this->html('subtitle')?></p><?php endif?>
 <?php if ($this->data['undelete']):?><p><?php $this->html('undelete')?></p><?php endif?>
@@ -138,11 +139,11 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 </div>
 <footer>
 	<ul>
-		<li><a href>About</a></li>
-		<li><a href>Educators</a></li>
-		<li><a href>Parents</a></li>
-		<li><a href>Community Guidelines</a></li>
-		<li><a href>Contact Us</a></li>
+		<li><a href="http://scratch.mit.edu/about/">About</a></li>
+		<li><a href="http://scratch.mit.edu/educators/">Educators</a></li>
+		<li><a href="http://scratch.mit.ed/parents/">Parents</a></li>
+		<li><a href="http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
+		<li><a href="http://scratch.mit.edu/contact-us/">Contact Us</a></li>
 	</ul>
 	<p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
 </footer>
