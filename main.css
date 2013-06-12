@@ -160,6 +160,10 @@ header li a:hover, #userfcttoggle.open {
 article.box > h1 {
 	font-size: 22px;
 }
+h1.firstHeading,
+h2 {
+	border-bottom: solid 1px black;
+}
 .box-content {
 	background: #fff;
 	border-top: 1px solid #e0e0e0;
