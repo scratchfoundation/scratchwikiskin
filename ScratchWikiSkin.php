@@ -49,19 +49,19 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<a class= "scratch" href = "http://scratch.mit.edu"></a>
 		
 		<ul class=left>
-			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a>
-			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a>
-			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a>
-			<li class = last><a href="http://scratch.mit.edu/help/">Help</a>
+			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a></li>
+			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a></li>
+			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a></li>
+			<li class = last><a href="http://scratch.mit.edu/help/">Help</a></li>
 		
 		<!-- search -->
 			<li>
 				<form action="<?php $this->text( 'wgScript' ) ?>" class="search">
 					<span class="glass"><i></i></span>
-					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki">
+					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki" />
 					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
-					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext">
-					<input type="hidden" value="Special:Search" name="title">
+					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext" />
+					<input type="hidden" value="Special:Search" name="title" />
 				</form>
 			</li>
 		</ul>
@@ -75,7 +75,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <?php	} else { ?>
 			<li id=userfcttoggle class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
 			<ul id=userfctdropdown class=dropdownmenu><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
-				<li<?php if ($tab['class']):?> class="<?=htmlspecialchars($tab['class'])?>"<?php endif?>><a href="<?=htmlspecialchars($tab['href'])?>"<?=$skin->tooltipAndAccesskeyAttribs("ca-$key")?>><?=htmlspecialchars($tab['text'])?></a><?php endforeach?>
+				<li<?php if ($tab['class']):?> class="<?=htmlspecialchars($tab['class'])?>"<?php endif?>><a href="<?=htmlspecialchars($tab['href'])?>"><?=htmlspecialchars($tab['text'])?></a><?php endforeach?>
 			</ul>
 <?php	} ?>
 		</ul>
