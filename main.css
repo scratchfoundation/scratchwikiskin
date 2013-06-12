@@ -187,7 +187,10 @@ a.new{
 	text-decoration: none;
 }
 
-a.external
+a.external {
+	background: url(external-link.png) center right no-repeat;
+	padding-right: 13px;
+}
 a:hover,
 a:focus,
 a:active {
