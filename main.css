@@ -417,3 +417,7 @@ table.diff td div {
 img{
 	width: 100%;
 }
+
+#mw-content-text{
+	overflow: hidden;
+}
