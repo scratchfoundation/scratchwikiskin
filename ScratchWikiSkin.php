@@ -49,17 +49,20 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<a class= "scratch" href = "http://scratch.mit.edu"></a>
 		
 		<ul class=left>
-			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a>
-			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a>
-			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a>
-			<li class = last><a href="http://scratch.mit.edu/help/">Help</a>
+			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a></li>
+			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a></li>
+			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a></li>
+			<li class = last><a href="http://scratch.mit.edu/help/">Help</a></li>
 		
 		<!-- search -->
-		<li><form action="/w/index.php" class=search>
-				<span class="glass"><i></i></span>
-				<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki">
-				<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
-				<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext">					<input type="hidden" value="Special:Search" name="title">
+			<li>
+				<form action="<?php $this->text( 'wgScript' ) ?>" class="search">
+					<span class="glass"><i></i></span>
+					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki" />
+					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
+					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext" />
+					<input type="hidden" value="Special:Search" name="title" />
+				</form>
 			</li>
 		</ul>
 		<ul class="user right">
@@ -68,11 +71,11 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<!-- user links -->
 <?php	if (!$wgUser->isLoggedIn()) { ?>
 			<!--<li class = last><a href=" 	Special:Userlogin">Log in to the Wiki</a></li>-->
-			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo $this->data['personal_urls']['anonlogin']['href'];}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
+			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo htmlspecialchars($this->data['personal_urls']['anonlogin']['href']);}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
 <?php	} else { ?>
 			<li id=userfcttoggle class="user-name dropdown-toggle"><a><?=htmlspecialchars($wgUser->mName)?></a></li>
 			<ul id=userfctdropdown class=dropdownmenu><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
-				<li<?php if ($tab['class']):?> class="<?=htmlspecialchars($tab['class'])?>"<?php endif?>><a href="<?=htmlspecialchars($tab['href'])?>"<?=$skin->tooltipAndAccesskeyAttribs("ca-$key")?>><?=htmlspecialchars($tab['text'])?></a><?php endforeach?>
+				<li<?php if ($tab['class']):?> class="<?=htmlspecialchars($tab['class'])?>"<?php endif?>><a href="<?=htmlspecialchars($tab['href'])?>"><?=htmlspecialchars($tab['text'])?></a><?php endforeach?>
 			</ul>
 <?php	} ?>
 		</ul>
@@ -81,7 +84,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <div class="container main">
 	<div class=main-inner>
 		<div class=left>
-		<div class = "wikilogo_space"><a class = "wikilogo" href = "/w/index.php/Main_Page" title = "Scratch Wiki Main Page"></a></div>
+		<div class = "wikilogo_space"><a class = "wikilogo" href = "<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" title = "Scratch Wiki Main Page"></a></div>
 <?php		foreach ($this->getSidebar() as $box): if ($box['header']!='Toolbox'||$wgUser->isLoggedIn()){?>
 			<div class=box>
 				<!-- <?=print_r($box);?> -->
@@ -91,6 +94,9 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <?php				foreach ($box['content'] as $name => $item):?>
 					<?=$this->makeListItem($name, $item)?>
 <?php				endforeach;
+				?>
+				</ul>
+<?php
 			else:?>
 				<?=$box['content']?>
 <?php			endif?>
@@ -110,15 +116,13 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		</div>
 		<div class=right>
 			<article class=box>
-				<h1><?php $this->html('title')?><div id=pagefctbtn></div>
+				<h1><?php $this->html('title')?></h1>
+				<div id=pagefctbtn></div>
 				<ul id=pagefctdropdown class="dropdownmenu box">
 <?				foreach ($this->data['content_actions'] as $key => $tab):?>
 					<?=$this->makeListItem($key, $tab)?>
 <?				endforeach?>
 				</ul>
-			</nav>
-				</ul>				
-				</h1>
 				<div class=box-content>
 <?php if ($this->data['subtitle']):?><p><?php $this->html('subtitle')?></p><?php endif?>
 <?php if ($this->data['undelete']):?><p><?php $this->html('undelete')?></p><?php endif?>
@@ -135,11 +139,11 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 </div>
 <footer>
 	<ul>
-		<li><a href>About</a>
-		<li><a href>Educators</a>
-		<li><a href>Parents</a>
-		<li><a href>Community Guidelines</a>
-		<li><a href>Contact Us</a>
+		<li><a href="http://scratch.mit.edu/about/">About</a></li>
+		<li><a href="http://scratch.mit.edu/educators/">Educators</a></li>
+		<li><a href="http://scratch.mit.ed/parents/">Parents</a></li>
+		<li><a href="http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
+		<li><a href="http://scratch.mit.edu/contact-us/">Contact Us</a></li>
 	</ul>
 	<p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
 </footer>
