@@ -100,9 +100,8 @@ header li a:hover, #userfcttoggle.open {
 	display: block;
 }
 .main .right {
-	float: right;
 	width: 760px;
-	margin-left: 20px;
+	margin-left: 180px;
 }
 .main-inner::after,
 .main .left::after,
@@ -131,7 +130,6 @@ header li a:hover, #userfcttoggle.open {
 	-o-box-shadow: 0 2px 3px rgba(34,25,25,0.3);
 	box-shadow: 0 2px 3px rgba(34,25,25,0.3);
 	margin: 0px 0px 20px;
-	//position: absolute;
 }
 .box > h1 {
 	margin: 0;
@@ -154,6 +152,11 @@ article.box > h1 {
 	padding: 5px 20px 20px 20px;
 	margin: 0;
 	list-style-type: none;
+}
+.box-content h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 4px;
 }
 nav.box li a {
 	padding: 2px 0;
@@ -266,7 +269,6 @@ opacity: .8;
 	z-axis: 3;
 }
 #pagefctbtn.open, #pagefctbtn:hover {
-	
 	background-color: #DDDDDD !important;
 }
 .dropdownmenu {
@@ -289,7 +291,6 @@ opacity: .8;
 }
 .dropdownmenu li:hover {
 	background-color: #EEEEEE;
-	//border-radius: 5px;
 }
 .dropdownmenu li a {
 	font-weight: normal;
@@ -361,3 +362,54 @@ opacity: .8;
 	background: none;
 	border: none;
 }*/
+
+
+
+.new {
+    color: #e1314c;
+}
+dt {
+    font-weight: bold;
+}
+
+
+#toc {
+    border: 1px solid #aaa;
+    padding: 10px 10px;
+}
+#toctitle h2 {
+    display: inline;
+    font-size: 1.25em;
+}
+.toctoggle {
+    float: right;
+    padding-left: 5px; font-size: 14px; font-weight: normal;
+    margin: 0 5px 0 0;
+    line-height: 20px;
+}
+#toc ul {
+    list-style: none;
+}
+#toc ul {
+    margin: 0.5em 0;
+}
+#toc li {
+    line-height: 18px;
+}
+
+
+.thumbinner {
+    margin: 2em 0;
+}
+.thumb.tright {
+    margin-left: 2em;
+}
+.thumb.tleft {
+    margin-right: 2em;
+}
+
+
+/* fix diff scrollbars */
+table.diff td div {
+    overflow: visible;
+}
