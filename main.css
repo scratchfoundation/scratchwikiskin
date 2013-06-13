@@ -438,6 +438,15 @@ dt {
     margin-right: 2em;
 }
 
+div.thumbinner {
+  border: 1px solid #ccc;
+  padding: 3px !important;
+  background-color: #f9f9f9;
+  font-size: 94%;
+  text-align: center;
+  overflow: hidden;
+}
+
 
 /* fix diff scrollbars */
 table.diff td div {
