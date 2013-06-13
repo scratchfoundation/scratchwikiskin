@@ -148,6 +148,9 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 	</ul>
 	<p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
 </footer>
+
+        <?php $this->printTrail(); ?>
+
 		<?php
 
 	}
