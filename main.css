@@ -11,7 +11,7 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 33px;
+	height: 35px;
 	padding: 0 10px;
 	background-color: #0F8BC0;
 	-webkit-box-shadow: 0 1px 1px #ccc;
@@ -27,8 +27,9 @@ a.scratch{
 	display: block;
 	width: 80px;
 	height: 35px;
-	background: url("scratchlogo.png") center center no-repeat;
+	background: url("scratchlogo.png") left center no-repeat;
 	text-indent: -99999em;
+	padding: 0 2px;
 }
 a.scratch:hover{
 	background: url("scratchlogo_highlight.png") center center no-repeat;
@@ -53,7 +54,7 @@ header li a {
 	display: block;
 	border-left: 1px solid #149acb;
 	padding: 0px 15px;
-	line-height: 33px;
+	line-height: 35px;
 	text-decoration: none !important;
 	cursor: pointer;
 
