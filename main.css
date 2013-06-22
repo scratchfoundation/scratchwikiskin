@@ -46,6 +46,8 @@ header .left {
 }
 header .right {
 	float: right;
+	font-weight: bold;
+	font-size: 15px;
 }
 header li {
 	float: left;
