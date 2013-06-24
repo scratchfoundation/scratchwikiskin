@@ -18,7 +18,7 @@ header {
 	-moz-box-shadow: 0 1px 1px #ccc;
 	-o-box-shadow: 0 1px 1px #ccc;
 	box-shadow: 0 1px 1px #ccc;
-	z-index: 3;
+	z-index: 200;
 }
 
 
