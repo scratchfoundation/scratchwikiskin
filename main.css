@@ -32,7 +32,7 @@ a.scratch{
 	padding: 0 2px;
 }
 a.scratch:hover{
-	background: url("scratchlogo_highlight.png") center center no-repeat;
+	background: url("scratchlogo_highlight.png") left center no-repeat;
 }
 
 header ul,
