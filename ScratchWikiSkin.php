@@ -108,7 +108,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 				
 				<h1>Help the wiki!</h1>
 				<div class=box-content>
-				The Scratch Wiki is made by and for Scratchers. Do you want to contribute?<br><br><a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more!</a>
+				The Scratch Wiki is made by and for Scratchers. Do you want to contribute?<br><br>
+				<a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more!</a>
 				</div>
 				
 			</div>
@@ -155,34 +156,25 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 
 	}
 	protected function renderContenttypeBox() {
-		global $wgStylePath;
-		//content type identification box. to be moved somwhere else (cleaner).
-		if( $this->data['catlinks'] ) {
+		global $wgStylePath, $wgUser;
+		
+		//content type identification box. to be moved somewhere else (cleaner).
+		if( $this->data['catlinks'] && $wgUser->isLoggedIn()) {
 			$cat = $this->data['catlinks'];
-			if(strpos($cat, 'Tutorials')>0 || strpos($cat, 'FAQ')>0 || strpos($cat, 'Help Pages')>0) {
-				$contenttype = 'helppage';
-			} else if(strpos($cat, 'Portals')>0) {
-				$contenttype = 'portal';
-			} else {
-				$contenttype = 'descriptive';
-			}
-		} else {
-			//not good. we need a better way to find out when not to content-categorize a page.
-			$contenttype = 'descriptive';
-		}
-			
-		$titles = Array('descriptive'=>'Information Page', 'helppage'=>'How-to Page', 'portal'=>'Portal');	
-		$info   = Array(
-			'descriptive'	=> 'This page has information, facts, and history about this subject.',
-			'helppage'		=> 'This page provides step-by-step help on how to do something.',
-			'portal'		=> 'This page contains links to help you find the information you\'re looking for.');
-		$o =	'<div class="box ctype ctype-'.$contenttype.'">'.
-			 	'<h1>'.$titles[$contenttype].'</h1>'.
-				'<div class=box-content>'./*'<img src="'.$wgStylePath.'/s2cookie/ctype-'.$contenttype.'.png"></img><br>'*/
-				$info[$contenttype].'</div>'.
+			if(strpos($cat, 'Tutorials')>0 || strpos($cat, 'FAQ')>0 || strpos($cat, 'Help Pages')> 0 || strpos($cat, 'How To Pages')> 0) {
+				$o =	'<div class="box ctype ctype-helppage">'.
+			 	'<h1>How To page</h1>'.
+				'<div class=box-content>'.
+				'This page provides step-by-step help on how to do something for new users. Before editing, please read the How To page <a href = /wiki/Help:How_To_pages>guidelines.</a></div>'.
 				'</div>';
-		if ($contenttype!='portal') {
-			echo $o;
-		}
+				echo $o;
+				
+
+			} 
+			
+		} 	
+		
+		
+		
 	}
 }
