@@ -109,7 +109,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 				<h1>Help the wiki!</h1>
 				<div class=box-content>
 				The Scratch Wiki is made by and for Scratchers. Do you want to contribute?<br><br>
-				<a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more!</a>
+				<a href = "/wiki/Scratch_Wiki_talk:Community_Portal">Check out the Community Portal</a><br><br>
+				<a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more about joining as an editor!</a>
 				</div>
 				
 			</div>
