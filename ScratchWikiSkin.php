@@ -162,7 +162,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		//content type identification box. to be moved somewhere else (cleaner).
 		if( $this->data['catlinks'] && $wgUser->isLoggedIn()) {
 			$cat = $this->data['catlinks'];
-			if(strpos($cat, 'Tutorials')>0 || strpos($cat, 'FAQ')>0 || strpos($cat, 'Help Pages')> 0 || strpos($cat, 'How To Pages')> 0) {
+			if(strpos($cat, 'How To Pages')> 0) {
 				$o =	'<div class="box ctype ctype-helppage">'.
 			 	'<h1>How To page</h1>'.
 				'<div class=box-content>'.

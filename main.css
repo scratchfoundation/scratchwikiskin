@@ -106,11 +106,12 @@ header li a:hover, #userfcttoggle.open {
 
 
 .wikilogo_space{
-	height: 140px;
+	height: 150px;
+	margin-left: 15px;
 }
 
 .wikilogo{
-	background-image: url("wiki.png") ;
+	background-image: url("wikilogo2.png") ;
 	background-repeat: no-repeat;
 	height: 140px;
 	display: block;
