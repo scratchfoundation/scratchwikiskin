@@ -117,6 +117,20 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <?php		} ?>
 		</div>
 		<div class=right>
+			<?php if( $this->data['catlinks'] && $wgUser->isLoggedIn()) {
+			$cat = $this->data['catlinks'];
+			if(strpos($cat, 'How To Pages')> 0) {
+				$o =	'<div class="box ctype ctype-helppage">'.
+			 	'<h1>How To page</h1>'.
+				'<div class=box-content>'.
+				'This page provides step-by-step help on how to do something for new users. Before editing, please read the How To page <a href = /wiki/Help:How_To_pages>guidelines.</a></div>'.
+				'</div>';
+				echo $o;
+				
+
+			} 
+			
+		} 	?>
 			<article class=box>
 				<h1><?php $this->html('title')?>
 				<div id=pagefctbtn></div>
@@ -160,20 +174,20 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		global $wgStylePath, $wgUser;
 		
 		//content type identification box. to be moved somewhere else (cleaner).
-		if( $this->data['catlinks'] && $wgUser->isLoggedIn()) {
-			$cat = $this->data['catlinks'];
-			if(strpos($cat, 'How To Pages')> 0) {
-				$o =	'<div class="box ctype ctype-helppage">'.
-			 	'<h1>How To page</h1>'.
-				'<div class=box-content>'.
-				'This page provides step-by-step help on how to do something for new users. Before editing, please read the How To page <a href = /wiki/Help:How_To_pages>guidelines.</a></div>'.
-				'</div>';
-				echo $o;
-				
+#		if( $this->data['catlinks'] && $wgUser->isLoggedIn()) {
+#			$cat = $this->data['catlinks'];
+#			if(strpos($cat, 'How To Pages')> 0) {
+#				$o =	'<div class="box ctype ctype-helppage">'.
+#			 	'<h1>How To page</h1>'.
+#				'<div class=box-content>'.
+#				'This page provides step-by-step help on how to do something for new users. Before editing, please read the How To page <a href = /wiki/Help:How_To_pages>guidelines.</a></div>'.
+#				'</div>';
+#				echo $o;
+#				
 
-			} 
-			
-		} 	
+#			} 
+#			
+#		} 	
 		
 		
 		
