@@ -57,7 +57,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		<!-- search -->
 			<li>
 				<form action="<?php $this->text( 'wgScript' ) ?>" class="search">
-					<span class="glass"><i></i></span>
+					<!--<span class="glass"><i></i></span>-->
+					<input type= "submit" class= "glass">
 					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki" />
 					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
 					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext" />
