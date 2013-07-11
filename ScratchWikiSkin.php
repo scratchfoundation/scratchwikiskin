@@ -58,8 +58,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<li>
 				<form action="<?php $this->text( 'wgScript' ) ?>" class="search">
 					<!--<span class="glass"><i></i></span>-->
-					<input type= "submit" class= "glass">
-					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki" />
+					<input type= "submit" class= "glass"> 
+					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki"  />
 					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
 					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext" />
 					<input type="hidden" value="Special:Search" name="title" />
@@ -110,8 +110,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 				<h1>Help the wiki!</h1>
 				<div class=box-content>
 				The Scratch Wiki is made by and for Scratchers. Do you want to contribute?<br><br>
-				<a href = "/wiki/Scratch_Wiki_talk:Community_Portal">Check out the Community Portal</a><br><br>
-				<a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more about joining as an editor!</a>
+				<a href="/wiki/Contribute_to_the_Scratch_Wiki">Learn more about joining as an editor!</a><br><br>
+				<a href = "/wiki/Scratch_Wiki_talk:Community_Portal">See discussions in the Community Portal</a>
 				</div>
 				
 			</div>
@@ -124,7 +124,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 				$o =	'<div class="box ctype ctype-helppage">'.
 			 	'<h1>How To page</h1>'.
 				'<div class=box-content>'.
-				'This page provides step-by-step help on how to do something for new users. Before editing, please read the How To page <a href = /wiki/Help:How_To_pages>guidelines.</a></div>'.
+				'This page provides step-by-step help on how to do something for new users. Before editing, please read the <a href = /wiki/Help:How_To_pages>How To page guidelines.</a></div>'.
 				'</div>';
 				echo $o;
 				
