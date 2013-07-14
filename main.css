@@ -147,6 +147,7 @@ header li a:hover, #userfcttoggle.open {
 	-o-box-shadow: 0 2px 3px rgba(34,25,25,0.3);
 	box-shadow: 0 2px 3px rgba(34,25,25,0.3);
 	margin: 0px 0px 20px;
+	line-height: 1.5em;
 }
 .box > h1 {
 	margin: 0;
