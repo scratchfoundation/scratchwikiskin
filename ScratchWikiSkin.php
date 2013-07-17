@@ -118,6 +118,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <?php		} ?>
 		</div>
 		<div class=right>
+			<?php if( $this->data['newtalk'] ) { ?><div class="box"><h1><?php $this->html('newtalk') ?></h1></div><?php } ?>
 			<?php if( $this->data['catlinks'] && $wgUser->isLoggedIn()) {
 			$cat = $this->data['catlinks'];
 			if(strpos($cat, 'How To Pages')> 0) {
