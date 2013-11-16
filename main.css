@@ -463,3 +463,11 @@ img{
 #mw-content-text{
 	overflow: hidden;
 }
+ul#f-list li {
+	display: inline-block;
+	font-size: 11px;
+	color: rgb(95, 95, 95);
+}
+ul#f-list {
+	text-align: center;
+}

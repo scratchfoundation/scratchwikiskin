@@ -153,6 +153,22 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <?php endif; ?>
 				</div>
 			</article>
+<?php   
+// generate additional footer links
+$footerlinks = array(
+        'lastmod', 
+// 'viewcount',
+);
+?>
+        		<ul id="f-list">
+<?php
+foreach ( $footerlinks as $aLink ) {
+        if ( isset( $this->data[$aLink] ) && $this->data[$aLink] ) {
+?>              		<li id="<?php echo $aLink ?>"><?php $this->html( $aLink ) ?></li>
+<?php   }
+}
+?>
+        		</ul>
 		</div>
 	</div>
 </div>
