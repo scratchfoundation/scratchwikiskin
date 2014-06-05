@@ -410,6 +410,7 @@ dt {
 #toc {
     border: 1px solid #aaa;
     padding: 10px 10px;
+    display: inline-block;
 }
 #toctitle h2 {
     display: inline;
