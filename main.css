@@ -309,7 +309,7 @@ border-radius: 0;
 	font-size: 14px;
 	list-style: none;
 	display: none;
-	z-index: 2;
+	z-index: 200;
 	background-color: #DDDDDD;
 	overflow: hidden;
 	border-radius: 5px;

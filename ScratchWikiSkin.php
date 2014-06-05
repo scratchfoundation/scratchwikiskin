@@ -61,7 +61,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 					<input type= "submit" class= "glass" value= ""> 
 					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki"  />
 					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
-					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" name="fulltext" />
+					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the pages for this text" value="Search" />
 					<input type="hidden" value="Special:Search" name="title" />
 				</form>
 			</li>
