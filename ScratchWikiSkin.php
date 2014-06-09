@@ -173,14 +173,83 @@ foreach ( $footerlinks as $aLink ) {
 	</div>
 </div>
 <footer>
-	<ul>
-		<li><a href="http://scratch.mit.edu/about/">About</a></li>
-		<li><a href="http://scratch.mit.edu/educators/">Educators</a></li>
-		<li><a href="http://scratch.mit.ed/parents/">Parents</a></li>
-		<li><a href="http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
-		<li><a href="http://scratch.mit.edu/contact-us/">Contact Us</a></li>
-	</ul>
-	<p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
+	<div class="container">
+        
+        <style>
+          footer ul.footer-col li {
+            list-style-type:none;
+            display: inline-block;
+            width: 184px;
+            text-align: left;
+            vertical-align: top;
+          }
+
+          footer ul.footer-col li h4 {
+            font-weight: bold;
+            font-size: 14px;
+            color: #666;
+          }
+
+
+        </style>
+          <ul class="clearfix footer-col">
+            <li>
+              <h4>About</h4>
+              <ul>
+                <li><a href ="scratch.mit.edu/about/">About Scratch</a></li>
+                <li><a href = "scratch.mit.edu/parents/">For Parents</a></li>
+                <li><a href = "scratch.mit.edu/educators/">For Educators</a></li>
+                <li><a href ="scratch.mit.edu/jobs/">Jobs</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Community</h4>
+              <ul>
+                <li><a href = "scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
+                <li><a href = "scratch.mit.edu/discuss/">Discussion Forums</a></li>
+                <li><a href = "http://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Support</h4>
+              <ul>
+                <li><a href = "scratch.mit.edu/help/">Help Page</a></li>
+                <li><a href = "scratch.mit.edu/help/faq/">FAQ</a></li>
+                <li><a href = "scratch.mit.edu/scratch2download/">Offline Editor</a></li>
+                <li><a href = "scratch.mit.edu/contact-us/">Contact Us</a></li> 
+              </ul>
+            </li>
+            <li>
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="/terms_of_use/">Terms of Use</a></li>
+                <li><a href="/privacy_policy/">Privacy Policy</a></li>
+                <li><a href = "/DMCA/">DMCA</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Donate</h4>
+              <ul>
+                <li>
+                If you enjoy using Scratch consider making a donation to the 
+                <a href="http://codetolearn.org">Code-to-Learn Foundation</a> to support future development. 
+                <br />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="donatePaypal">
+                          <!-- input type="hidden" name="amount" value="1234"/ -->
+                          <input type="hidden" name="cmd" value="_xclick">
+                          <input type="hidden" name="business" value="paypal@codetolearn.org">
+                          <input type="hidden" name="item_name" value="Code To Learn">
+                          <input type="hidden" name="no_shipping" value="1">
+                          <input type="hidden" name="return" value="http://scratch.mit.edu/">
+                          <input type="hidden" name="cancel_return" value="http://scratch.mit.edu/">
+                          <a href="javascript:document.forms['donatePaypal'].submit();">Donate</a>
+                </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+<br>
+<p >Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
 </footer>
 
         <?php $this->printTrail(); ?>
