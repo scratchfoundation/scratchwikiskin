@@ -196,35 +196,35 @@ foreach ( $footerlinks as $aLink ) {
             <li>
               <h4>About</h4>
               <ul>
-                <li><a href ="scratch.mit.edu/about/">About Scratch</a></li>
-                <li><a href = "scratch.mit.edu/parents/">For Parents</a></li>
-                <li><a href = "scratch.mit.edu/educators/">For Educators</a></li>
-                <li><a href ="scratch.mit.edu/jobs/">Jobs</a></li>
+                <li><a href ="http://scratch.mit.edu/about/">About Scratch</a></li>
+                <li><a href = "http://scratch.mit.edu/parents/">For Parents</a></li>
+                <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
+                <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
               </ul>
             </li>
             <li>
               <h4>Community</h4>
               <ul>
-                <li><a href = "scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
-                <li><a href = "scratch.mit.edu/discuss/">Discussion Forums</a></li>
+                <li><a href = "http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
+                <li><a href = "http://scratch.mit.edu/discuss/">Discussion Forums</a></li>
                 <li><a href = "http://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
               </ul>
             </li>
             <li>
               <h4>Support</h4>
               <ul>
-                <li><a href = "scratch.mit.edu/help/">Help Page</a></li>
-                <li><a href = "scratch.mit.edu/help/faq/">FAQ</a></li>
-                <li><a href = "scratch.mit.edu/scratch2download/">Offline Editor</a></li>
-                <li><a href = "scratch.mit.edu/contact-us/">Contact Us</a></li> 
+                <li><a href = "http://scratch.mit.edu/help/">Help Page</a></li>
+                <li><a href = "http://scratch.mit.edu/help/faq/">FAQ</a></li>
+                <li><a href = "http://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
+                <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li> 
               </ul>
             </li>
             <li>
               <h4>Legal</h4>
               <ul>
-                <li><a href="/terms_of_use/">Terms of Use</a></li>
-                <li><a href="/privacy_policy/">Privacy Policy</a></li>
-                <li><a href = "/DMCA/">DMCA</a></li>
+                <li><a href="http://scratch.mit.edu/terms_of_use/">Terms of Use</a></li>
+                <li><a href="http://scratch.mit.edu/privacy_policy/">Privacy Policy</a></li>
+                <li><a href = "http://scratch.mit.edu/DMCA/">DMCA</a></li>
               </ul>
             </li>
             <li>
