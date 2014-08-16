@@ -12,5 +12,8 @@ To install / setup
   
   you@yourcomputer:/var/www/w/skins$ ln -s scratchwikiskin/ScratchWikiSkin.php ScratchWikiSkin.php
 
+4. Add 'ScratchWikiSkin' to array in Skin.php (line 69):
+  if ( !in_array( $aSkin, array( ..., 'ScratchWikiSkin' ) ) ) {
+
 Credits: Original design by JSO, with contributions from jvvg, blob8108, and scmb1.
 
