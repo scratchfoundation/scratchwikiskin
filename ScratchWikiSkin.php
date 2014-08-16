@@ -228,11 +228,13 @@ foreach ( $footerlinks as $aLink ) {
               </ul>
             </li>
             <li>
-              <h4>Donate</h4>
+              <h4>Scratch Family</h4>
               <ul>
-                <li>
-                If you enjoy using Scratch consider making a donation to the 
-                <a href="http://codetolearn.org">Code-to-Learn Foundation</a> to support future development. 
+              	<li><a href="http://scratched.gse.harvard.edu/">ScratchEd</a>
+              	<li><a href="http://scratchjr.org">ScratchJR</a>
+              	<li><a href="http://day.scratch.mit.edu">Scratch Day</a>
+         	<li><a href="http://scratch.mit.edu/conference/">Scratch Conference</a>
+                <li><a href="http://codetolearn.org">Code-to-Learn Foundation</a>
                 <br />
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="donatePaypal">
                           <!-- input type="hidden" name="amount" value="1234"/ -->
