@@ -1,4 +1,4 @@
-scratchwikiskin
+Scratch-Wiki-Skin
 =================
 
 If you'd like to help fix bugs in the skin for the Scratch Wiki, please fork, make and test changes, and then submit a pull request. Our design goals are to keep the wiki skin as simple and as easy to use as possible. So we're unlikely to accept pull requests for fancy features, or code that's difficult to maintain.
@@ -13,4 +13,3 @@ To install / setup
   you@yourcomputer:/var/www/w/skins$ ln -s scratchwikiskin/ScratchWikiSkin.php ScratchWikiSkin.php
 
 Credits: Original design by JSO, with contributions from jvvg, blob8108, and scmb1.
-
