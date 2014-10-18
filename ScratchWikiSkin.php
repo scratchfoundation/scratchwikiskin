@@ -208,6 +208,7 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href = "http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
                 <li><a href = "http://scratch.mit.edu/discuss/">Discussion Forums</a></li>
                 <li><a href = "http://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
+                <li><a href = "http://scratch.mit.edu/statistics/">Statistics</a></li>
               </ul>
             </li>
             <li>
