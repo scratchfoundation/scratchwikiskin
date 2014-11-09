@@ -49,10 +49,10 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<a class= "scratch" href = "http://scratch.mit.edu"></a>
 		
 		<ul class="left">
-			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a></li>
-			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a></li>
-			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a></li>
-			<li class = "last"><a href="http://scratch.mit.edu/help/">Help</a></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li class = "last"></li>
 		
 		<!-- search -->
 			<li>
@@ -201,52 +201,7 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
                 <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
               </ul>
-            </li>
-            <li>
-              <h4>Community</h4>
-              <ul>
-                <li><a href = "http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
-                <li><a href = "http://scratch.mit.edu/discuss/">Discussion Forums</a></li>
-                <li><b>Scratch Wiki</b></li>
-              </ul>
-            </li>
-            <li>
-              <h4>Support</h4>
-              <ul>
-                <li><a href = "http://scratch.mit.edu/help/">Help Page</a></li>
-                <li><a href = "http://scratch.mit.edu/help/faq/">FAQ</a></li>
-                <li><a href = "http://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
-                <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li> 
-              </ul>
-            </li>
-            <li>
-              <h4>Legal</h4>
-              <ul>
-                <li><a href="http://scratch.mit.edu/terms_of_use/">Terms of Use</a></li>
-                <li><a href="http://scratch.mit.edu/privacy_policy/">Privacy Policy</a></li>
-                <li><a href = "http://scratch.mit.edu/DMCA/">DMCA</a></li>
-              </ul>
-            </li>
-            <li>
-              <h4>Donate</h4>
-              <ul>
-                <li>
-                If you enjoy using Scratch consider making a donation to the 
-                <a href="http://codetolearn.org">Code-to-Learn Foundation</a> to support future development. 
-                <br />
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="donatePaypal">
-                          <!-- input type="hidden" name="amount" value="1234"/ -->
-                          <input type="hidden" name="cmd" value="_xclick">
-                          <input type="hidden" name="business" value="paypal@codetolearn.org">
-                          <input type="hidden" name="item_name" value="Code To Learn">
-                          <input type="hidden" name="no_shipping" value="1">
-                          <input type="hidden" name="return" value="http://scratch.mit.edu/">
-                          <input type="hidden" name="cancel_return" value="http://scratch.mit.edu/">
-                          <a href="javascript:document.forms['donatePaypal'].submit();">Donate</a>
-                </form>
-                </li>
-              </ul>
-            </li>
+            </li> 
           </ul>
 <br>
 <p >Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
