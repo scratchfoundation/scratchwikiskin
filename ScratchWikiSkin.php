@@ -52,7 +52,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<li><a href="/index.php/Main Page">Main page</li>
 			<li><a href="/index.php/Special:RecentChanges">Recent changes</li>
 			<li><a href="/index.php/Special:RandomPage">Random page</li>
-			<li class = "last"><a href="/index.php/Everything_Wiki_talk:Community_portal">Community Portal</li>
+			<li class = "last"><a href="/index.php/Everything_Wiki_talk:Community_portal">Community Portal</a></li>
 		
 		<!-- search -->
 			<li>
