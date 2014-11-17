@@ -49,10 +49,10 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<a class= "scratch" href = "http://scratch.mit.edu"></a>
 		
 		<ul class="left">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li class = "last"></li>
+			<li><a href="/index.php/Main Page">Main page</li>
+			<li><a href="/index.php/Special:RecentChanges">Recent changes</li>
+			<li><a href="/index.php/Special:RandomPage">Random page</li>
+			<li class = "last"><a href="/index.php/Everything_Wiki_talk:Community_portal">Community Portal</li>
 		
 		<!-- search -->
 			<li>
