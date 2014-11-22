@@ -43,23 +43,24 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		$this->html('headelement');
 		
 		?>
-<header>
+<header style = "background-color:green">
 	<div class="container">
 		
-			<a class= "scratch" href = "http://scratch.mit.edu"></a>
+			
 		
 		<ul class="left">
 			<li><a href="/index.php/Main Page">Main page</li>
 			<li><a href="/index.php/Special:RecentChanges">Recent changes</li>
 			<li><a href="/index.php/Special:RandomPage">Random page</li>
-			<li class = "last"><a href="/index.php/Everything_Wiki_talk:Community_portal">Community Portal</a></li>
+			<li><a href="/index.php/Everything_Wiki:Sandbox">Sandbox</li>
+			<li class = "last"><a href="/index.php/Everything_Wiki_talk:Community_Portal">Community Portal</a></li>
 		
 		<!-- search -->
 			<li>
 				<form action="<?php $this->text( 'wgScript' ) ?>" class="search">
 					<!--<span class="glass"><i></i></span>-->
 					<input type= "submit" class= "glass" value= ""> 
-					<input type="search" id="searchInput" accesskey="f" title="Search Scratch Wiki [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki"  />
+					<input type="search" id="searchInput" accesskey="f" title="Search  [alt-shift-f]"  name="search" autocomplete="off" placeholder="Search the Wiki"  />
 					<!--<input type="submit" class="searchButton" id="searchGoButton" title="Go to a page with this exact name if exists" value="Go" name="go">-->
 					<input type="hidden" class="searchButton" id="mw-searchButton" title="Search the Everything Wiki!" value="Search" />
 					<input type="hidden" value="Special:Search" name="title" />
