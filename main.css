@@ -288,7 +288,7 @@ border-radius: 0;
 	position: relative;
 }
 #pagefctbtn {
-	background: url("edit.png") no-repeat scroll center center transparent;
+	background: url("editt.png") no-repeat scroll center center transparent;
     border-radius: 3px 3px 3px 3px;
     display: inline-block;
     width: 35px;
