@@ -73,7 +73,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<!-- user links -->
 <?php	if (!$wgUser->isLoggedIn()) { ?>
 			<!--<li class = last><a href=" 	Special:Userlogin">Log in to the Wiki</a></li>-->
-			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo htmlspecialchars($this->data['personal_urls']['anonlogin']['href']);}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to the Wiki</a></li>
+			<li class = last><a href="<?php if (isset($this->data['personal_urls']['anonlogin'])){echo htmlspecialchars($this->data['personal_urls']['anonlogin']['href']);}else{echo $this->data['personal_urls']['login']['href'];}?>">Log in to your account</a></li>
 <?php	} else { ?>
 			<li id="userfcttoggle" class="last"><a><?=htmlspecialchars($wgUser->mName)?><span class = caret></span></a></li>
 			<ul id=userfctdropdown class="dropdownmenu"><?php foreach ($this->data['personal_urls'] as $key => $tab):?>
@@ -197,15 +197,12 @@ foreach ( $footerlinks as $aLink ) {
             <li>
               <h4>About</h4>
               <ul>
-                <li><a href ="http://scratch.mit.edu/about/">About Scratch</a></li>
-                <li><a href = "http://scratch.mit.edu/parents/">For Parents</a></li>
-                <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
-                <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
+               
               </ul>
             </li> 
           </ul>
 <br>
-<p >Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
+<p ></p>
 </footer>
 
         <?php $this->printTrail(); ?>
