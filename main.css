@@ -28,7 +28,7 @@ a.scratch{
 	display: block;
 	width: 80px;
 	height: 35px;
-	background: url("scratchlogo.png") left center no-repeat;
+	background: url("") left center no-repeat;
 	text-indent: -99999em;
 	padding: 0 2px;
 }
@@ -112,7 +112,7 @@ header li a:hover, #userfcttoggle.open {
 }
 
 .wikilogo{
-	background-image: url("wikilogo2.png") ;
+	background-image: url("") ;
 	background-repeat: no-repeat;
 	height: 140px;
 	display: block;
@@ -288,7 +288,7 @@ border-radius: 0;
 	position: relative;
 }
 #pagefctbtn {
-	background: url("http://everythingwiki.x10.bz/images/9/91/Edit_button.png") no-repeat scroll center center transparent;
+	background: url("Edit.png") no-repeat scroll center center transparent;
     border-radius: 3px 3px 3px 3px;
     display: inline-block;
     width: 35px;
