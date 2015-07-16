@@ -53,6 +53,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 			<li><a href="http://scratch.mit.edu/explore/?date=this_month">Explore</a></li>
 			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a></li>
 			<li class = "last"><a href="http://scratch.mit.edu/help/">Help</a></li>
+			<li class = "last"><a href="http://scratch.mit.edu/about/">About</a></li>
 		
 		<!-- search -->
 			<li>
@@ -196,10 +197,12 @@ foreach ( $footerlinks as $aLink ) {
             <li>
               <h4>About</h4>
               <ul>
-                <li><a href ="http://scratch.mit.edu/about/">About Scratch</a></li>
+                <li><a href = "http://scratch.mit.edu/about/">About Scratch</a></li>
                 <li><a href = "http://scratch.mit.edu/parents/">For Parents</a></li>
                 <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
-                <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
+                <li><a href = "https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=wLtVhgoXBUxboxlmf8SzlpuuVBWk5uCPamdLTjoEskdnO06xr85UlbXRXB0&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198d8562aa8a3da7ac30bbfba73b3e80dcc">Donate</a></li>
+                <li><a href = "http://scratch.mit.edu/jobs/">Jobs</a></li>
+                <li><a href = "http://wiki.scratch.mit.edu/wiki/Scratch_Press">Press</a></li>
               </ul>
             </li>
             <li>
