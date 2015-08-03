@@ -200,7 +200,9 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href ="http://scratch.mit.edu/about/">About Scratch</a></li>
                 <li><a href = "http://scratch.mit.edu/parents/">For Parents</a></li>
                 <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
+                <li><a href = "http://scratch.mit.edu/credits/">Credits</a></li>
                 <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
+                <li><a href = "http://scratch.mit.edu/press/">Press</a></li>
               </ul>
             </li>
             <li>
@@ -218,7 +220,8 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href = "http://scratch.mit.edu/help/">Help Page</a></li>
                 <li><a href = "http://scratch.mit.edu/help/faq/">FAQ</a></li>
                 <li><a href = "http://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
-                <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li> 
+                <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li>
+                <li><a hred = "https://secure.donationpay.org/codetolearn/">Donate</a></li> 
               </ul>
             </li>
             <li>
@@ -235,19 +238,8 @@ foreach ( $footerlinks as $aLink ) {
               	<li><a href="http://scratched.gse.harvard.edu/">ScratchEd</a>
               	<li><a href="http://scratchjr.org">ScratchJR</a>
               	<li><a href="http://day.scratch.mit.edu">Scratch Day</a>
-         	<li><a href="http://scratch.mit.edu/conference/">Scratch Conference</a>
-                <li><a href="http://codetolearn.org">Code-to-Learn Foundation</a>
-                <br />
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="donatePaypal">
-                          <!-- input type="hidden" name="amount" value="1234"/ -->
-                          <input type="hidden" name="cmd" value="_xclick">
-                          <input type="hidden" name="business" value="paypal@codetolearn.org">
-                          <input type="hidden" name="item_name" value="Code To Learn">
-                          <input type="hidden" name="no_shipping" value="1">
-                          <input type="hidden" name="return" value="http://scratch.mit.edu/">
-                          <input type="hidden" name="cancel_return" value="http://scratch.mit.edu/">
-                          <a href="javascript:document.forms['donatePaypal'].submit();">Donate</a>
-                </form>
+         		<li><a href="http://scratch.mit.edu/conference/">Scratch Conference</a>
+                <li><a href="http://codetolearn.org">Scratch Foundation</a>
                 </li>
               </ul>
             </li>
