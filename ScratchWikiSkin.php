@@ -200,7 +200,7 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href ="http://scratch.mit.edu/about/">About Scratch</a></li>
                 <li><a href = "http://scratch.mit.edu/parents/">For Parents</a></li>
                 <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
-                <li><a href = "http://scratch.mit.edu/credits/">Credits</a></li>
+                <li><a href = "https://scratch.mit.edu/info/credits/">Credits</a></li>
                 <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
                 <li><a href = "http://scratch.mit.edu/press/">Press</a></li>
               </ul>
@@ -221,7 +221,7 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href = "http://scratch.mit.edu/help/faq/">FAQ</a></li>
                 <li><a href = "http://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
                 <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li>
-                <li><a href = "https://secure.donationpay.org/codetolearn/">Donate</a></li> 
+                <li><a href ="https://secure.donationpay.org/scratchfoundation/">Donate</a></li> 
               </ul>
             </li>
             <li>
