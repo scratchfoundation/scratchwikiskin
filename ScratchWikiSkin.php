@@ -221,7 +221,7 @@ foreach ( $footerlinks as $aLink ) {
                 <li><a href = "http://scratch.mit.edu/help/faq/">FAQ</a></li>
                 <li><a href = "http://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
                 <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li>
-                <li><a hred = "https://secure.donationpay.org/codetolearn/">Donate</a></li> 
+                <li><a href = "https://secure.donationpay.org/codetolearn/">Donate</a></li> 
               </ul>
             </li>
             <li>
