@@ -14,7 +14,7 @@ header {
 	right: 0;
 	height: 35px;
 	padding: 0 10px;
-	background-color: #0F8BC0;
+	background-color: #25aff4;
 	-webkit-box-shadow: 0 1px 1px #ccc;
 	-moz-box-shadow: 0 1px 1px #ccc;
 	-o-box-shadow: 0 1px 1px #ccc;
@@ -353,7 +353,7 @@ border-radius: 0;
 	right: 0;
 	top: 33px;
 	border-top-left-radius: 0;
-	background-color:#0F8BC0;
+	background-color:#25aff4;
 	color: #FFFFFF;
 }
 #userfctdropdown li a {	
@@ -390,7 +390,7 @@ border-radius: 0;
 	font-size: 14px;
 }/*
 .ctype-descriptive {
-	background-color: #0F8BC0;
+	background-color: #25aff4;
 }
 .ctype-helppage {
 	background-color: #299027;
