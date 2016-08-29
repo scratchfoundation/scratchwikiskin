@@ -236,7 +236,7 @@ foreach ( $footerlinks as $aLink ) {
               <h4>Scratch Family</h4>
               <ul>
               	<li><a href="http://scratched.gse.harvard.edu/">ScratchEd</a>
-              	<li><a href="http://scratchjr.org">ScratchJR</a>
+              	<li><a href="http://scratchjr.org">ScratchJr</a>
               	<li><a href="http://day.scratch.mit.edu">Scratch Day</a>
          		<li><a href="http://scratch.mit.edu/conference/">Scratch Conference</a>
                 <li><a href="http://codetolearn.org">Scratch Foundation</a>
