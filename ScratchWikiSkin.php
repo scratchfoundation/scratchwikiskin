@@ -46,14 +46,14 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 <header>
 	<div class="container">
 		
-			<a class= "scratch" href = "http://scratch.mit.edu"></a>
+			<a class= "scratch" href = "https://scratch.mit.edu"></a>
 		
 		<ul class="left">
-			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a></li>
-			<li><a href="http://scratch.mit.edu/explore/projects/all">Explore</a></li>
-			<li><a href="http://scratch.mit.edu/discuss/">Discuss</a></li>
-			<li ><a href="http://scratch.mit.edu/about/">About</a></li>
-			<li class = "last"><a href="http://scratch.mit.edu/help/">Help</a></li>
+			<li><a href="https://scratch.mit.edu/projects/editor/">Create</a></li>
+			<li><a href="https://scratch.mit.edu/explore/projects/all">Explore</a></li>
+			<li><a href="https://scratch.mit.edu/discuss/">Discuss</a></li>
+			<li ><a href="https://scratch.mit.edu/about/">About</a></li>
+			<li class = "last"><a href="https://scratch.mit.edu/help/">Help</a></li>
 		
 		<!-- search -->
 			<li>
@@ -197,39 +197,40 @@ foreach ( $footerlinks as $aLink ) {
             <li>
               <h4>About</h4>
               <ul>
-                <li><a href ="http://scratch.mit.edu/about/">About Scratch</a></li>
-                <li><a href = "http://scratch.mit.edu/parents/">For Parents</a></li>
-                <li><a href = "http://scratch.mit.edu/educators/">For Educators</a></li>
+                <li><a href ="https://scratch.mit.edu/about/">About Scratch</a></li>
+                <li><a href = "https://scratch.mit.edu/parents/">For Parents</a></li>
+                <li><a href = "https://scratch.mit.edu/educators/">For Educators</a></li>
+                <li><a hred = "https://scratch.mit.edu/developers">For Developers</a></li>
                 <li><a href = "https://scratch.mit.edu/info/credits/">Credits</a></li>
-                <li><a href ="http://scratch.mit.edu/jobs/">Jobs</a></li>
-                <li><a href = "http://scratch.mit.edu/press/">Press</a></li>
+                <li><a href ="https://scratch.mit.edu/jobs/">Jobs</a></li>
+                <li><a href = "https://wiki.scratch.mit.edu/wiki/Scratch_Press">Press</a></li>
               </ul>
             </li>
             <li>
               <h4>Community</h4>
               <ul>
-                <li><a href = "http://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
-                <li><a href = "http://scratch.mit.edu/discuss/">Discussion Forums</a></li>
-                <li><a href = "http://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
-                <li><a href = "http://scratch.mit.edu/statistics/">Statistics</a></li>
+                <li><a href = "https://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
+                <li><a href = "https://scratch.mit.edu/discuss/">Discussion Forums</a></li>
+                <li><a href = "https://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
+                <li><a href = "https://scratch.mit.edu/statistics/">Statistics</a></li>
               </ul>
             </li>
             <li>
               <h4>Support</h4>
               <ul>
-                <li><a href = "http://scratch.mit.edu/help/">Help Page</a></li>
-                <li><a href = "http://scratch.mit.edu/help/faq/">FAQ</a></li>
-                <li><a href = "http://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
-                <li><a href = "http://scratch.mit.edu/contact-us/">Contact Us</a></li>
+                <li><a href = "https://scratch.mit.edu/help/">Help Page</a></li>
+                <li><a href = "https://scratch.mit.edu/help/faq/">FAQ</a></li>
+                <li><a href = "https://scratch.mit.edu/scratch2download/">Offline Editor</a></li>
+                <li><a href = "https://scratch.mit.edu/contact-us/">Contact Us</a></li>
                 <li><a href ="https://secure.donationpay.org/scratchfoundation/">Donate</a></li> 
               </ul>
             </li>
             <li>
               <h4>Legal</h4>
               <ul>
-                <li><a href="http://scratch.mit.edu/terms_of_use/">Terms of Use</a></li>
-                <li><a href="http://scratch.mit.edu/privacy_policy/">Privacy Policy</a></li>
-                <li><a href = "http://scratch.mit.edu/DMCA/">DMCA</a></li>
+                <li><a href="https://scratch.mit.edu/terms_of_use/">Terms of Use</a></li>
+                <li><a href="https://scratch.mit.edu/privacy_policy/">Privacy Policy</a></li>
+                <li><a href = "https://scratch.mit.edu/DMCA/">DMCA</a></li>
               </ul>
             </li>
             <li>
@@ -238,7 +239,7 @@ foreach ( $footerlinks as $aLink ) {
               	<li><a href="http://scratched.gse.harvard.edu/">ScratchEd</a>
               	<li><a href="http://scratchjr.org">ScratchJr</a>
               	<li><a href="http://day.scratch.mit.edu">Scratch Day</a>
-         		<li><a href="http://scratch.mit.edu/conference/">Scratch Conference</a>
+         		<li><a href="https://scratch.mit.edu/conference/">Scratch Conference</a>
                 <li><a href="http://codetolearn.org">Scratch Foundation</a>
                 </li>
               </ul>
