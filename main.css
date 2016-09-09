@@ -136,7 +136,7 @@ header li a:hover, #userfcttoggle.open {
 }
 .box {
 	background: #f7f7f7;
-	border: 1px solid #E0E0E0;
+// border: 1px solid #E0E0E0; — some strange effect
 	-moz-border-top-left-radius: 10px;
 	-moz-border-top-right-radius: 10px;
 	-webkit-border-top-left-radius: 10px;
@@ -256,34 +256,31 @@ form.search {
    margin-top: 5px;
 }
 form.search input {
--webkit-border-radius: 10px;
-border-radius: 10px;
-height: 23px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   height: 23px;
 //display: inline-block;
-padding-left: 33px;
-width: 204px;
-border: none;
-
-
-
+   padding-left: 33px;
+   width: 204px;
+   border: none;
 }
 form.search input:focus {
-outline: none;
+   outline: none;
  }
 form.search .glass {
-background: url("../images/nav-search-glass.62d43b28d86a.png") no-repeat 9px center;
-width: 26px;
-height: 23px;
-position: absolute;
-border: 0;
-border-right: 1px solid #ccc;
-padding-left: 28px;
-padding-right: 0;
-opacity: .8;
--moz-border-radius: 0;
--webkit-border-radius: 0;
-border-radius: 0;
- background: url("nav-search-glass.png") no-repeat center center;
+   background: url("../images/nav-search-glass.62d43b28d86a.png") no-repeat 9px center;
+   width: 26px;
+   height: 23px;
+   position: absolute;
+   border: 0;
+   border-right: 1px solid #ccc;
+   padding-left: 28px;
+   padding-right: 0;
+   opacity: .8;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   background: url("nav-search-glass.png") no-repeat center center;
 }
 
 
