@@ -51,8 +51,8 @@ class ScratchWikiSkinTemplate extends BaseTemplate{
 		<ul class="left">
 			<li><a href="http://scratch.mit.edu/projects/editor/">Create</a></li>
 			<li><a href="http://scratch.mit.edu/explore/projects/all">Explore</a></li>
-			<li><a href="http://scratch.mit.edu/tips/">Discuss</a></li>
-			<li ><a href="http://scratch.mit.edu/about/">Tips</a></li>
+			<li><a href="http://scratch.mit.edu/tips/">Tips</a></li>
+			<li ><a href="http://scratch.mit.edu/about/">About</a></li>
 			<li class = "last"><a href="http://scratch.mit.edu/help/">Help</a></li>
 		
 		<!-- search -->
